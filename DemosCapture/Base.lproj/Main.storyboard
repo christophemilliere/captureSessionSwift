@@ -35,11 +35,27 @@
                                     <constraint firstAttribute="height" constant="367" id="lkx-lR-qUW"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGw-GA-McY">
+                                <rect key="frame" x="16" y="460" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCv-8v-XHt">
+                                <rect key="frame" x="16" y="489" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hCv-8v-XHt" secondAttribute="trailing" constant="16" id="3HA-He-ecx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qNk-OP-hem" secondAttribute="trailing" constant="58" id="3vH-Hd-lVD"/>
                             <constraint firstItem="qNk-OP-hem" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="AiA-bi-p46"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dGw-GA-McY" secondAttribute="trailing" constant="16" id="CKg-07-QC1"/>
+                            <constraint firstItem="dGw-GA-McY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GMJ-B8-qyd"/>
+                            <constraint firstItem="hCv-8v-XHt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GY4-G6-0eJ"/>
                             <constraint firstItem="qNk-OP-hem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="N7a-Kc-Xxp"/>
                             <constraint firstItem="iQE-OA-BhJ" firstAttribute="top" secondItem="qNk-OP-hem" secondAttribute="bottom" constant="115" id="guC-h6-nmX"/>
                             <constraint firstItem="iQE-OA-BhJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m8D-QN-wNF"/>
@@ -47,8 +63,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="ui_infoLabel" destination="hCv-8v-XHt" id="vWq-sC-1wo"/>
                         <outlet property="ui_preview" destination="qNk-OP-hem" id="DRs-3P-l1M"/>
                         <outlet property="ui_startSession" destination="iQE-OA-BhJ" id="KfF-yX-RVH"/>
+                        <outlet property="ui_titleLabel" destination="dGw-GA-McY" id="Hz6-kl-u2I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
